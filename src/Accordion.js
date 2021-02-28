@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { View, TouchableOpacity, Text, StyleSheet } from 'react-native';
+import { Platform, TouchableOpacity, Text, StyleSheet, UIManager, LayoutAnimation } from 'react-native';
+import { PLATFORM } from './Constants';
 
 export default class Accordion extends Component {
   constructor(props) {
@@ -8,6 +9,9 @@ export default class Accordion extends Component {
       isRowExpanded: false,
       userData: props.userData,
     };
+    if (Platform.OS === PLATFORM.ANDROID) {
+      UIManager.setLayoutAnimationEnabledExperimental(true);
+    }
   }
 
   render() {
@@ -30,6 +34,7 @@ export default class Accordion extends Component {
   }
 
   onExpandUserData() {
+    LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
     this.setState({
       isRowExpanded: !this.state.isRowExpanded
     });
