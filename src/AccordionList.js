@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { View, FlatList } from 'react-native';
 import Accordion, { accordionStyle } from './Accordion';
-import { LIST_DATA } from './ListMockData';
+import { USER_LIST_MOCK_DATA } from './Constants';
 
 class AccordionList extends Component {
 
   static defaultProps = {
-    data: LIST_DATA
+    data: USER_LIST_MOCK_DATA
   }
 
   render() {
