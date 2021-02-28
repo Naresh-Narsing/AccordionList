@@ -24,14 +24,14 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 import AccordionList from './src/AccordionList';
-import { LIST_DATA_EG } from './src/ListMockData';
+import { LIST_DATA, LIST_DATA_EG } from './src/ListMockData';
 
 const App: () => React$Node = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
-        <AccordionList data={LIST_DATA_EG} />
+        <AccordionList data={LIST_DATA} />
       </SafeAreaView>
     </>
   );
