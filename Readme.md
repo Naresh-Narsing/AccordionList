@@ -1,10 +1,5 @@
 # React Native Accordion List
 
-# Demo Gif:
-
-![eg_recording](https://user-images.githubusercontent.com/16000668/109415700-2aa4a300-79e0-11eb-8115-8f17ab58e58d.gif)
-
-
 # Install
 npm i react-native-accordionlist
 
@@ -68,3 +63,8 @@ const LIST_DATA = [
 Prop | Type | default | Description
 ---- | ---- | ------- | -----------
 data | Array | LIST_DATA | Array of objects
+
+
+# Demo Gif:
+
+![eg_recording](https://user-images.githubusercontent.com/16000668/109415700-2aa4a300-79e0-11eb-8115-8f17ab58e58d.gif)
