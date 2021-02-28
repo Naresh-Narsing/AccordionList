@@ -1,10 +1,13 @@
 # React Native Accordion List
 
+# Description
+React native Accordion list using flatlist with animation.
+
 # Install
 npm i react-native-accordionlist
 
 # Import
-```import AccordionList from './src/AccordionList';```
+```import { AccordionList } from "react-native-accordionlist";```
 
 # Usage
 ```
@@ -64,7 +67,7 @@ Prop | Type | default | Description
 ---- | ---- | ------- | -----------
 data | Array | LIST_DATA | Array of objects
 
-
 # Demo Gif:
 
-![eg_recording](https://user-images.githubusercontent.com/16000668/109415700-2aa4a300-79e0-11eb-8115-8f17ab58e58d.gif)
+![21-02-28-16-46-26](https://user-images.githubusercontent.com/16000668/109416624-6d1cae80-79e5-11eb-9d2d-e2263ae0612e.gif)
+
