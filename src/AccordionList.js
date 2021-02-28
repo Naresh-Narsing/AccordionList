@@ -3,12 +3,17 @@ import { View, FlatList } from 'react-native';
 import Accordion, { accordionStyle } from './Accordion';
 import { LIST_DATA } from './ListMockData';
 
-export default class Main extends Component {
+class AccordionList extends Component {
+
+  static defaultProps = {
+    data: LIST_DATA
+  }
 
   render() {
+    const { data } = this.props;
     return (
       <FlatList
-        data={LIST_DATA}
+        data={data}
         renderItem={this.renderItem}
         keyExtractor={(item, index) => index.toString()}
         ItemSeparatorComponent={() =>
@@ -24,3 +29,5 @@ export default class Main extends Component {
     );
   };
 }
+
+export default AccordionList;
