@@ -1,7 +1,8 @@
 # React Native Accordion List
 
+# Demo Gif:
 
-https://user-images.githubusercontent.com/16000668/109415387-66d70400-79de-11eb-9e97-b8386022eb99.mp4
+![eg_recording](https://user-images.githubusercontent.com/16000668/109415700-2aa4a300-79e0-11eb-8115-8f17ab58e58d.gif)
 
 
 # Install
