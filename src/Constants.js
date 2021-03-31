@@ -5,92 +5,92 @@ export const PLATFORM = {
 export const USER_LIST_MOCK_DATA = [
     {
         id: 1,
-        name: 'Leanne Graham',
-        username: 'Bret',
-        email: 'Sincere@april.biz',
-        city: 'Gwenborough',
-        phone: '1-770-736-8031 x56442',
-        website: 'hildegard.org',
+        title: 'Leanne Graham',
+        collapsedData: {
+            email: 'Sincere@april.biz',
+            city: 'Gwenborough',
+            website: 'hildegard.org'
+        }
     },
     {
         id: 2,
-        name: 'Ervin Howell',
-        username: 'Antonette',
-        email: 'Shanna@melissa.tv',
-        city: 'Wisokyburgh',
-        phone: '010-692-6593 x09125',
-        website: 'anastasia.net',
+        title: 'Ervin Howell',
+        collapsedData: {
+            email: 'Shanna@melissa.tv',
+            city: 'Wisokyburgh',
+            website: 'anastasia.net'
+        }
     },
     {
         id: 3,
-        name: 'Clementine Bauch',
-        username: 'Samantha',
-        email: 'Nathan@yesenia.net',
-        city: 'McKenziehaven',
-        phone: '1-463-123-4447',
-        website: 'ramiro.info',
+        title: 'Clementine Bauch',
+        collapsedData: {
+            email: 'Nathan@yesenia.net',
+            city: 'McKenziehaven',
+            website: 'ramiro.info'
+        }
     },
     {
         id: 4,
-        name: 'Patricia Lebsack',
-        username: 'Karianne',
-        email: 'Julianne.OConner@kory.org',
-        city: 'South Elvis',
-        phone: '493-170-9623 x156',
-        website: 'kale.biz',
+        title: 'Patricia Lebsack',
+        collapsedData: {
+            email: 'Julianne.OConner@kory.org',
+            city: 'South Elvis',
+            website: 'kale.biz'
+        }
     },
     {
         id: 5,
-        name: 'Chelsey Dietrich',
-        username: 'Kamren',
-        email: 'Lucio_Hettinger@annie.ca',
-        city: 'Roscoeview',
-        phone: '(254)954-1289',
-        website: 'demarco.info',
+        title: 'Chelsey Dietrich',
+        collapsedData: {
+            email: 'Lucio_Hettinger@annie.ca',
+            city: 'Roscoeview',
+            website: 'demarco.info'
+        }
     },
     {
         id: 6,
-        name: 'Mrs. Dennis Schulist',
-        username: 'Leopoldo_Corkery',
-        email: 'Karley_Dach@jasper.info',
-        city: 'South Christy',
-        phone: '1-477-935-8478 x6430',
-        website: 'ola.org',
+        title: 'Mrs. Dennis Schulist',
+        collapsedData: {
+            email: 'Karley_Dach@jasper.info',
+            city: 'South Christy',
+            website: 'ola.org'
+        }
     },
     {
         id: 7,
-        name: 'Kurtis Weissnat',
-        username: 'Elwyn.Skiles',
-        email: 'Telly.Hoeger@billy.biz',
-        city: 'Howemouth',
-        phone: '210.067.6132',
-        website: 'elvis.io',
+        title: 'Kurtis Weissnat',
+        collapsedData: {
+            email: 'Telly.Hoeger@billy.biz',
+            city: 'Howemouth',
+            website: 'elvis.io'
+        }
     },
     {
         id: 8,
-        name: 'Nicholas Runolfsdottir V',
-        username: 'Maxime_Nienow',
-        email: 'Sherwood@rosamond.me',
-        city: 'Aliyaview',
-        phone: '586.493.6943 x140',
-        website: 'jacynthe.com',
+        title: 'Nicholas Runolfsdottir V',
+        collapsedData: {
+            email: 'Sherwood@rosamond.me',
+            city: 'Aliyaview',
+            website: 'jacynthe.com'
+        }
     },
     {
         id: 9,
-        name: 'Glenna Reichert',
-        username: 'Delphine',
-        email: 'Chaim_McDermott@dana.io',
-        city: 'Bartholomebury',
-        phone: '(775)976-6794 x41206',
-        website: 'conrad.com',
+        title: 'Glenna Reichert',
+        collapsedData: {
+            email: 'Chaim_McDermott@dana.io',
+            city: 'Bartholomebury',
+            website: 'conrad.com'
+        }
     },
     {
         id: 10,
-        name: 'Clementina DuBuque',
-        username: 'Moriah.Stanton',
-        email: 'Rey.Padberg@karina.biz',
-        city: 'Lebsackbury',
-        phone: '024-648-3804',
-        website: 'ambrose.net',
+        title: 'Clementina DuBuque',
+        collapsedData: {
+            email: 'Rey.Padberg@karina.biz',
+            city: 'Lebsackbury',
+            website: 'ambrose.net'
+        }
     }
 ];

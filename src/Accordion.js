@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { Platform, TouchableOpacity, Text, StyleSheet, UIManager, LayoutAnimation } from 'react-native';
+import { Platform, TouchableOpacity, Text, Image, StyleSheet, UIManager, LayoutAnimation } from 'react-native';
 import { PLATFORM } from './Constants';
 
 export default class Accordion extends Component {
+
   constructor(props) {
     super(props);
     this.state = {
@@ -15,19 +16,21 @@ export default class Accordion extends Component {
   }
 
   render() {
-    const { name, username, email, city } = this.state.userData;
+    const { title, collapsedData } = this.state.userData;
     const { isRowExpanded } = this.state;
     return (
       <>
         <TouchableOpacity style={accordionStyle.rowContainer}
+          activeOpacity={0.5}
           onPress={() => this.onExpandUserData()}>
-          <Text>{name}</Text>
-          {isRowExpanded ? <Text>Collapse</Text> : <Text>Expand</Text>}
+          <Text>{title}</Text>
+          {isRowExpanded ? <ImageComponent src={require('./images/ic_up.png')} /> :
+            <ImageComponent src={require('./images/ic_down.png')} />}
         </TouchableOpacity>
         {isRowExpanded && <>
-          <Text style={accordionStyle.hiddenItem}>UserName : {username}</Text>
-          <Text style={accordionStyle.hiddenItem}>Email : {email}</Text>
-          <Text style={accordionStyle.hiddenItem}>City : {city}</Text>
+          {Object.keys(collapsedData).map((key) => {
+            return <Text style={accordionStyle.hiddenItem}>{collapsedData[key]}</Text>
+          })}
         </>}
       </>
     );
@@ -41,6 +44,10 @@ export default class Accordion extends Component {
   }
 }
 
+export const ImageComponent = (props) => {
+  return (<Image source={props.src} style={accordionStyle.arrowIcons} resizeMode='contain' />);
+}
+
 export const accordionStyle = StyleSheet.create({
   itemSeperator: {
     height: 1,
@@ -49,13 +56,24 @@ export const accordionStyle = StyleSheet.create({
   rowContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    height: 54,
+    height: 52,
     padding: 8,
     alignItems: 'center'
+  },
+  headerTitle: {
+    fontWeight: 'bold',
+    paddingBottom: 4,
+    paddingLeft: 8,
+    paddingRight: 8,
   },
   hiddenItem: {
     paddingLeft: 8,
     paddingRight: 8,
     paddingBottom: 4,
+  },
+  arrowIcons: {
+    width: 14,
+    height: 14,
+    marginRight: 12
   }
 });
