@@ -28,8 +28,8 @@ export default class Accordion extends Component {
             <ImageComponent src={require('./images/ic_down.png')} />}
         </TouchableOpacity>
         {isRowExpanded && <>
-          {Object.keys(collapsedData).map((key) => {
-            return <Text style={accordionStyle.hiddenItem}>{collapsedData[key]}</Text>
+          {Object.keys(collapsedData).map((key, index) => {
+            return <Text key={index} style={accordionStyle.hiddenItem}>{collapsedData[key]}</Text>
           })}
         </>}
       </>
