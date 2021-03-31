@@ -69,4 +69,5 @@ data | Array | LIST_DATA | Array of objects
 
 # Demo Gif:
 
-![21-02-28-16-46-26](https://user-images.githubusercontent.com/16000668/109416624-6d1cae80-79e5-11eb-9d2d-e2263ae0612e.gif)
+![accordion](https://user-images.githubusercontent.com/16000668/113183285-76619b00-9271-11eb-843f-a3338fac8e2c.gif)
+
