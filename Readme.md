@@ -49,7 +49,8 @@ component | Component |  CollapsedComponent | Custom Component
 
 # Demo Gif:
 
-https://user-images.githubusercontent.com/16000668/117206142-18941600-ae10-11eb-9aec-e1ced68b54df.mov
+![demo](https://user-images.githubusercontent.com/16000668/117207769-f69b9300-ae11-11eb-84a4-425b17218f73.gif)
+
 
 
 
