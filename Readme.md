@@ -12,50 +12,25 @@ npm i react-native-accordionlist
 # Usage
 ```
 const USER_LIST_MOCK_DATA = [
-  {
+    {
         id: 1,
-        title: 'Leanne Graham',
-        collapsedData: {
-            email: 'Sincere@april.biz',
-            city: 'Gwenborough',
-            website: 'hildegard.org'
-        }
+        title: 'Leanne Graham'
     },
     {
         id: 2,
-        title: 'Ervin Howell',
-        collapsedData: {
-            email: 'Shanna@melissa.tv',
-            city: 'Wisokyburgh',
-            website: 'anastasia.net'
-        }
+        title: 'Ervin Howell'
     },
     {
         id: 3,
-        title: 'Clementine Bauch',
-        collapsedData: {
-            email: 'Nathan@yesenia.net',
-            city: 'McKenziehaven',
-            website: 'ramiro.info'
-        }
+        title: 'Clementine Bauch'
     },
     {
         id: 4,
-        title: 'Patricia Lebsack',
-        collapsedData: {
-            email: 'Julianne.OConner@kory.org',
-            city: 'South Elvis',
-            website: 'kale.biz'
-        }
+        title: 'Patricia Lebsack'
     },
     {
         id: 5,
-        title: 'Chelsey Dietrich',
-        collapsedData: {
-            email: 'Lucio_Hettinger@annie.ca',
-            city: 'Roscoeview',
-            website: 'demarco.info'
-        }
+        title: 'Chelsey Dietrich'
     }
 ]
 
@@ -66,6 +41,11 @@ const USER_LIST_MOCK_DATA = [
 Prop | Type | default | Description
 ---- | ---- | ------- | -----------
 data | Array | LIST_DATA | Array of objects
+
+# Props for customization
+Prop      | Type      | default | Description
+--------- | ----------| ------- | ---------------
+component | Component |         | Custom Component
 
 # Demo Gif:
 

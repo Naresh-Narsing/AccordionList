@@ -2,95 +2,48 @@ export const PLATFORM = {
     ANDROID: 'android'
 }
 
+export const DEFAULT_MESSAGE = 'Default Collapsed Component';
+export const CUSTOM_MESSAGE = 'Render your own Collapsed Component';
+
 export const USER_LIST_MOCK_DATA = [
     {
         id: 1,
-        title: 'Leanne Graham',
-        collapsedData: {
-            email: 'Sincere@april.biz',
-            city: 'Gwenborough',
-            website: 'hildegard.org'
-        }
+        title: 'Leanne Graham'
     },
     {
         id: 2,
-        title: 'Ervin Howell',
-        collapsedData: {
-            email: 'Shanna@melissa.tv',
-            city: 'Wisokyburgh',
-            website: 'anastasia.net'
-        }
+        title: 'Ervin Howell'
     },
     {
         id: 3,
-        title: 'Clementine Bauch',
-        collapsedData: {
-            email: 'Nathan@yesenia.net',
-            city: 'McKenziehaven',
-            website: 'ramiro.info'
-        }
+        title: 'Clementine Bauch'
     },
     {
         id: 4,
-        title: 'Patricia Lebsack',
-        collapsedData: {
-            email: 'Julianne.OConner@kory.org',
-            city: 'South Elvis',
-            website: 'kale.biz'
-        }
+        title: 'Patricia Lebsack'
     },
     {
         id: 5,
-        title: 'Chelsey Dietrich',
-        collapsedData: {
-            email: 'Lucio_Hettinger@annie.ca',
-            city: 'Roscoeview',
-            website: 'demarco.info'
-        }
+        title: 'Chelsey Dietrich'
     },
     {
         id: 6,
-        title: 'Mrs. Dennis Schulist',
-        collapsedData: {
-            email: 'Karley_Dach@jasper.info',
-            city: 'South Christy',
-            website: 'ola.org'
-        }
+        title: 'Mrs. Dennis Schulist'
     },
     {
         id: 7,
-        title: 'Kurtis Weissnat',
-        collapsedData: {
-            email: 'Telly.Hoeger@billy.biz',
-            city: 'Howemouth',
-            website: 'elvis.io'
-        }
+        title: 'Kurtis Weissnat'
     },
     {
         id: 8,
-        title: 'Nicholas Runolfsdottir V',
-        collapsedData: {
-            email: 'Sherwood@rosamond.me',
-            city: 'Aliyaview',
-            website: 'jacynthe.com'
-        }
+        title: 'Nicholas Runolfsdottir V'
     },
     {
         id: 9,
-        title: 'Glenna Reichert',
-        collapsedData: {
-            email: 'Chaim_McDermott@dana.io',
-            city: 'Bartholomebury',
-            website: 'conrad.com'
-        }
+        title: 'Glenna Reichert'
     },
     {
         id: 10,
-        title: 'Clementina DuBuque',
-        collapsedData: {
-            email: 'Rey.Padberg@karina.biz',
-            city: 'Lebsackbury',
-            website: 'ambrose.net'
-        }
+        title: 'Clementina DuBuque'
     }
 ];

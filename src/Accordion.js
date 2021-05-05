@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Platform, TouchableOpacity, Text, Image, StyleSheet, UIManager, LayoutAnimation } from 'react-native';
-import { PLATFORM } from './Constants';
+import { DEFAULT_MESSAGE, PLATFORM } from './Constants';
 
 export default class Accordion extends Component {
 
@@ -8,7 +8,6 @@ export default class Accordion extends Component {
     super(props);
     this.state = {
       isRowExpanded: false,
-      userData: props.userData,
     };
     if (Platform.OS === PLATFORM.ANDROID) {
       UIManager.setLayoutAnimationEnabledExperimental(true);
@@ -16,7 +15,7 @@ export default class Accordion extends Component {
   }
 
   render() {
-    const { title, collapsedData } = this.state.userData;
+    const { title } = this.props.itemData;
     const { isRowExpanded } = this.state;
     return (
       <>
@@ -28,9 +27,8 @@ export default class Accordion extends Component {
             <ImageComponent src={require('./images/ic_down.png')} />}
         </TouchableOpacity>
         {isRowExpanded && <>
-          {Object.keys(collapsedData).map((key, index) => {
-            return <Text key={index} style={accordionStyle.hiddenItem}>{collapsedData[key]}</Text>
-          })}
+          {this.props.component ||
+            <Text style={accordionStyle.hiddenItem}>{DEFAULT_MESSAGE}</Text>}
         </>}
       </>
     );
@@ -59,12 +57,6 @@ export const accordionStyle = StyleSheet.create({
     height: 52,
     padding: 8,
     alignItems: 'center'
-  },
-  headerTitle: {
-    fontWeight: 'bold',
-    paddingBottom: 4,
-    paddingLeft: 8,
-    paddingRight: 8,
   },
   hiddenItem: {
     paddingLeft: 8,

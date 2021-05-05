@@ -2,11 +2,13 @@ import React, { Component } from 'react';
 import { View, FlatList } from 'react-native';
 import Accordion, { accordionStyle } from './Accordion';
 import { USER_LIST_MOCK_DATA } from './Constants';
+import CollapsedComponent from './CollapsedComponent';
 
 class AccordionList extends Component {
 
   static defaultProps = {
-    data: USER_LIST_MOCK_DATA
+    data: USER_LIST_MOCK_DATA,
+    component: <CollapsedComponent />
   }
 
   render() {
@@ -25,7 +27,7 @@ class AccordionList extends Component {
 
   renderItem = ({ item, index }) => {
     return (
-      <Accordion userData={item} />
+      <Accordion itemData={item} component={this.props.component} />
     );
   };
 }
