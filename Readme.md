@@ -34,7 +34,7 @@ const USER_LIST_MOCK_DATA = [
     }
 ]
 
-<AccordionList data={USER_LIST_MOCK_DATA} />
+<AccordionList data={USER_LIST_MOCK_DATA} component={<CollapsedComponent />} />
 ```
 
 # Required Props
@@ -49,5 +49,7 @@ component | Component |         | Custom Component
 
 # Demo Gif:
 
-![accordion](https://user-images.githubusercontent.com/16000668/113183285-76619b00-9271-11eb-843f-a3338fac8e2c.gif)
+https://user-images.githubusercontent.com/16000668/117206142-18941600-ae10-11eb-9aec-e1ced68b54df.mov
+
+
 
