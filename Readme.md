@@ -43,9 +43,9 @@ Prop | Type | default | Description
 data | Array | LIST_DATA | Array of objects
 
 # Props for customization
-Prop      | Type      | default | Description
---------- | ----------| ------- | ---------------
-component | Component |         | Custom Component
+Prop      | Type      | default             | Description
+--------- | ----------| ------------------- | ---------------
+component | Component |  CollapsedComponent | Custom Component
 
 # Demo Gif:
 
